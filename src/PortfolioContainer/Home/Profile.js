@@ -6,11 +6,11 @@ import Typical from "react-typical";
 
 export default function Profile() {
   return (
-    <div classname="profile">
-      <div classname="profile-parent">
-        <div classname="profile-details">
-          <div classname="colz">
-            <div classname="colz-icon">
+    <div className="profile">
+      <div className="profile-parent">
+        <div className="profile-details">
+          <div className="colz">
+            <div className="colz-icon">
               <a href="https://www.linkedin.com/in/michael-m-1a0131195/">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -19,14 +19,14 @@ export default function Profile() {
               </a>
             </div>
           </div>
-          <div classname="profile-default-name">
-            <span classname="primary-text">
+          <div className="profile-default-name">
+            <span className="primary-text">
               {" "}
-              Hello, I'm <span classname="highlighted-text">Mike</span>
+              Hello, I'm <span className="highlighted-text">Mike</span>
             </span>
           </div>
-          <div classname="profile-details-role">
-            <span classname="primary-text">
+          <div className="profile-details-role">
+            <span className="primary-text">
               {" "}
               <h1>
                 {" "}
@@ -46,23 +46,23 @@ export default function Profile() {
                   ]}
                 />
               </h1>
-              <span classname="profile-role-tagline">
+              <span className="profile-role-tagline">
                 Experienced at front-end and back-end development.
               </span>
             </span>
           </div>
-          <div classname="profile-options">
-            <button classname="btn primary-btn"> Hire Me </button>
+          <div className="profile-options">
+            <button className="btn primary-btn"> Hire Me </button>
             <a
               href="../../../public/resume/MikeMinkoff.docx"
               download="MikeMinkoff.docx"
             >
-              <button classname="btn highlighted-btn">Get Resume</button>
+              <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
         </div>
-        <div classname="profile-picture">
-          <div classname="profile-picture-background"></div>
+        <div className="profile-picture">
+          <div className="profile-picture-background"></div>
         </div>
       </div>
     </div>
