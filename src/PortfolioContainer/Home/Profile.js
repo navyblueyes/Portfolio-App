@@ -1,5 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 export default function Profile() {
   return (
@@ -7,10 +9,10 @@ export default function Profile() {
       <div classname="profile-parent">
         <div classname="colz">
           <a href="https://www.linkedin.com/in/michael-m-1a0131195/">
-            <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a href="https://www.credly.com/users/michael-minkoff.21fd5056">
-            <FontAwesomeIcon icon="fa-duotone fa-circle-c" />
+            <FontAwesomeIcon icon={faCopyright} />
           </a>
         </div>
       </div>
