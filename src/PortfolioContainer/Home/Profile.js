@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import Typical from "react-typical";
+import "./Profile.css";
 
 export default function Profile() {
   return (
-    <div className="profile">
+    <div className="profile-c">
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
