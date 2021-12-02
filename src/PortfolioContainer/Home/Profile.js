@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Profile() {
   return (
@@ -6,10 +7,10 @@ export default function Profile() {
       <div classname="profile-parent">
         <div classname="colz">
           <a href="https://www.linkedin.com/in/michael-m-1a0131195/">
-            <i classname="fab fa-linkedin-in"></i>
+            <FontAwesomeIcon icon="fa-brands fa-linkedin" />
           </a>
           <a href="https://www.credly.com/users/michael-minkoff.21fd5056">
-            <i classname="fas fa-copyright"></i>
+            <FontAwesomeIcon icon="fa-duotone fa-circle-c" />
           </a>
         </div>
       </div>
