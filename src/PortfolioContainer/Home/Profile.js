@@ -10,21 +10,21 @@ export default function Profile() {
     <div className="profile-c">
       <div className="profile-parent">
         <div className="profile-details">
-          <div className="colz">
-            <div className="colz-icon">
-              <a href="https://www.linkedin.com/in/michael-m-1a0131195/">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a href="https://www.credly.com/users/michael-minkoff.21fd5056">
-                <FontAwesomeIcon icon={faCopyright} />
-              </a>
-            </div>
-          </div>
           <div className="profile-default-name">
             <span className="primary-text">
               {" "}
               Hello, I'm <span className="highlighted-text">Mike</span>
             </span>
+            <div className="colz">
+              <div className="colz-icon">
+                <a href="https://www.linkedin.com/in/michael-m-1a0131195/">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a href="https://www.credly.com/users/michael-minkoff.21fd5056">
+                  <FontAwesomeIcon icon={faCopyright} />
+                </a>
+              </div>
+            </div>
           </div>
           <div className="profile-details-role">
             <span className="primary-text">
@@ -34,15 +34,15 @@ export default function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "👋 Self-starter 👋",
+                    "Self-starter 👋",
                     1000,
-                    "🌩️ Cloud Developer 🌩️",
+                    "Cloud Developer 🌩️",
                     1000,
-                    "🧑‍🏫 MERN Developer 🧑‍🏫",
+                    "MERN Developer 🧑‍🏫",
                     1000,
-                    "🎖️ Navy Verteran 🎖️",
+                    "Navy Verteran 🎖️",
                     1000,
-                    "🧑‍💻 React Dev 🧑‍💻",
+                    "React Dev 🧑‍💻",
                     1000,
                   ]}
                 />

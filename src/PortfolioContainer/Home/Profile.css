@@ -5,7 +5,7 @@
   text-align: center;
   height: 10%;
   min-height: fit-content;
-  background-image: url("../../assets/Home/bg.jpg");
+  background-image: url("../../assets/Home/background.png");
 }
 
 .profile-parent {
@@ -57,15 +57,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 0px 0px var(--white);
-  border-radius: 50%;
   height: 380px;
   width: 380px;
   margin: 0 0px 0 100px;
 }
 .profile-picture-background {
-  height: 92%;
-  width: 92%;
+  height: 80%;
+  width: 80%;
   background-image: url("../../assets/Home/2.jpg");
   background-size: cover;
   border-radius: 50%;
