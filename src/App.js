@@ -13,7 +13,6 @@ library.add(fab, faLinkedin, faCopyright, faLinkedinIn);
 function App() {
   return (
     <div className="App">
-      <h1>HELLO HELLO</h1>
       <Profile />
     </div>
   );
