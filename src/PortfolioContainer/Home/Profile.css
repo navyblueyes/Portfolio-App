@@ -26,7 +26,7 @@
 
 .profile-details-role h1 {
   font-size: 40px;
-  font-family: "cursive";
+  font-family: "Bohemian Typewriter";
 }
 .primary-text {
   color: (--white);
@@ -37,7 +37,7 @@
 }
 
 .profile-role-tagline {
-  font-size: 19px;
+  font-size: 17px;
   margin: 5px 0 0 0;
   font-family: "Poppins Light";
 }
@@ -100,6 +100,9 @@
     width: 120px;
     padding: 11px 0;
     z-index: 700;
+  }
+  .profile-details-role h1 {
+    font-size: 35px;
   }
 }
 
