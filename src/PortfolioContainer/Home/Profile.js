@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faAws } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import Typical from "react-typical";
 import "./Profile.css";
@@ -13,7 +13,7 @@ export default function Profile() {
           <div className="profile-default-name">
             <span className="primary-text">
               {" "}
-              Hello, I'm <span className="highlighted-text">Mike</span>
+              Hello, I'm <span className="highlighted-text">Mike Minkoff</span>
             </span>
             <div className="colz">
               <div className="colz-icon">
@@ -22,6 +22,9 @@ export default function Profile() {
                 </a>
                 <a href="https://www.credly.com/users/michael-minkoff.21fd5056">
                   <FontAwesomeIcon icon={faCopyright} />
+                </a>
+                <a href="https://www.certmetrics.com/amazon/electronic_certificate.aspx?cert=C5FFE349872CB262C78EFB9780E9F66FO11230D2F3A31A124A8015D4FE1D37707">
+                  <FontAwesomeIcon icon={faAws} />
                 </a>
               </div>
             </div>
@@ -36,9 +39,9 @@ export default function Profile() {
                   steps={[
                     "Self-starter 👋",
                     1000,
-                    "Cloud Developer 🌩️",
+                    "Cloud Certified 🌩️",
                     1000,
-                    "MERN Developer 🧑‍🏫",
+                    "MERN Dev 🧑‍🏫",
                     1000,
                     "Navy Verteran 🎖️",
                     1000,
