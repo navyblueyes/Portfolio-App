@@ -3,10 +3,11 @@ import {
   TOTAL_SCREENS,
   GET_SCREEN_INDEX,
 } from "../../../utilities/commonUtils";
-import ScrollService from "../../../utilities/ScrollService";
+import ScrollService from "../../../utilities/ScrollServices";
+
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import MinkLogo from "../../../../public/MikeMinkoff-logo.svg";
+import { ReactComponent as MinkLogo } from "../../../assets/Home/MikeMinkoff-logo.svg";
 import "./Header.css";
 
 export default function Header() {
@@ -53,7 +54,7 @@ export default function Header() {
   return (
     <div>
       <div
-        className="header-option"
+        className="header-container"
         onClick={() => setShowHeaderOptions(!showHeaderOptions)}
       >
         <div className="header-parent">
