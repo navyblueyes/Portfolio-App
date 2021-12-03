@@ -43,7 +43,7 @@ export default function Profile() {
                     1000,
                     "MERN Dev 🧑‍🏫",
                     1000,
-                    "Navy Verteran 🎖️",
+                    "Navy Veteran 🎖️",
                     1000,
                     "React Dev 🧑‍💻",
                     1000,
