@@ -7,7 +7,7 @@ import ScrollService from "../../../utilities/ScrollServices";
 
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ReactComponent as MinkLogo } from "../../../assets/Home/MikeMinkoff-logo.svg";
+import MinkLogo from "../../../assets/Home/headerlogo.png";
 import "./Header.css";
 
 export default function Header() {
@@ -64,8 +64,8 @@ export default function Header() {
           >
             <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
           </div>
-          <div className="header-logo">
-            <MinkLogo />
+          <div className="header-logo" id="header-logo-1">
+            <img src={MinkLogo} />
           </div>
           <div
             className={

@@ -41,22 +41,27 @@ export default class ScrollService {
   };
   checkCurrentScreenUnderViewport = (event) => {
     if (!event || Object.keys(event).length < 1) return;
+
     for (let screen of TOTAL_SCREENS) {
       let screenFromDOM = document.getElementById(screen.screen_name);
       if (!screenFromDOM) continue;
+
       let fullyVisible = this.isElementInView(screenFromDOM, "complete");
       let partiallyVisible = this.isElementInView(screenFromDOM, "partial");
 
-      if (fullyVisible && partiallyVisible) {
+      if (fullyVisible || partiallyVisible) {
         if (partiallyVisible && !screen.alreadyRendered) {
+          //BROADCAST FADE IN EFFECT
           ScrollService.currentScreenFadeIn.next({
             fadeInScreen: screen.screen_name,
           });
           screen["alreadyRendered"] = true;
           break;
         }
+
         if (fullyVisible) {
-          ScrollService.currentScreenBroadCaster.next({
+          // BROADCAST SCREEN NAME
+          ScrollService.currentScreenBroadcaster.next({
             screenInView: screen.screen_name,
           });
           break;
