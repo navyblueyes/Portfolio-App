@@ -8,13 +8,14 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import PortfolioContainer from "./PortfolioContainer/ProtfolioContainer";
 
 library.add(fab, faLinkedin, faCopyright, faLinkedinIn, faAws);
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <PortfolioContainer />
     </div>
   );
 }
