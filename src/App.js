@@ -1,4 +1,4 @@
-import Profile from "./PortfolioContainer/Home/Profile";
+import Home from "./PortfolioContainer/Home/Home";
 import "./App.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -14,7 +14,7 @@ library.add(fab, faLinkedin, faCopyright, faLinkedinIn, faAws);
 function App() {
   return (
     <div className="App">
-      <Profile />
+      <Home />
     </div>
   );
 }
