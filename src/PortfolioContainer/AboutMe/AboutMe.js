@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollServices";
 import Animations from "../../utilities/Animations";
+import "./AboutMe.css";
 
 export default function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -47,15 +48,15 @@ export default function AboutMe(props) {
               <span>{SCREEN_CONSTANTS.highlights.heading}</span>
             </div>
             {renderHighlight()}
-          </div>
-          <div className="about-me-options">
-            <button className="btn primary-btn"> Hire Me </button>
-            <a
-              href="../../../public/resume/MikeMinkoff.docx"
-              download="MikeMinkoff.docx"
-            >
-              <button className="btn highlighted-btn">Get Resume</button>
-            </a>
+            <div className="about-me-options">
+              <button className="btn primary-btn"> Hire Me </button>
+              <a
+                href="../../../public/resume/MikeMinkoff.docx"
+                download="MikeMinkoff.docx"
+              >
+                <button className="btn highlighted-btn">Get Resume</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
