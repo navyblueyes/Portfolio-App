@@ -44,10 +44,13 @@ export default function AboutMe(props) {
             <span className="about-me-description">
               {SCREEN_CONSTANTS.description}
             </span>
-            <div className="highlight-heading">
-              <span>{SCREEN_CONSTANTS.highlights.heading}</span>
+
+            <div className="about-me-highlights">
+              <div className="highlight-heading">
+                <span>{SCREEN_CONSTANTS.highlights.heading}</span>
+              </div>
+              {renderHighlight()}
             </div>
-            {renderHighlight()}
             <div className="about-me-options">
               <button className="btn primary-btn"> Hire Me </button>
               <a
