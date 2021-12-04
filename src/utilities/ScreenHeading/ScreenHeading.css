@@ -16,7 +16,7 @@
   color: #1f2235;
   font-family: "Poppins Bold";
 }
-heading-separator {
+.heading-separator {
   display: flex;
   align-items: center;
   position: relative;
@@ -29,13 +29,14 @@ heading-separator {
   background-color: #1f2235;
 }
 .separator-blob {
-  height: 10px;
+  height: 6px;
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
 }
 .separator-blob div {
+  margin-top: -4px;
   width: 35px;
   border-radius: 10px;
   background-color: var(--dark-orange);
