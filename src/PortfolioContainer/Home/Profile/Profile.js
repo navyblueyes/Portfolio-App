@@ -23,7 +23,7 @@ export default function Profile() {
                 <a href="https://www.credly.com/users/michael-minkoff.21fd5056">
                   <FontAwesomeIcon icon={faCopyright} />
                 </a>
-                <a href="https://www.certmetrics.com/amazon/electronic_certificate.aspx?cert=C5FFE349872CB262C78EFB9780E9F66FO11230D2F3A31A124A8015D4FE1D37707">
+                <a href="https://www.credly.com/badges/de4aa7eb-d56e-4101-a484-223eadb0969f/public_url">
                   <FontAwesomeIcon icon={faAws} />
                 </a>
               </div>
