@@ -4,6 +4,7 @@ import { faLinkedin, faAws } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import Typical from "react-typical";
 import "./Profile.css";
+import ScrollService from "../../../utilities/ScrollServices";
 
 export default function Profile() {
   return (
@@ -56,7 +57,13 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
-            <button className="btn primary-btn"> Hire Me </button>
+            <button
+              className="btn primary-btn"
+              onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+            >
+              {" "}
+              Hire Me{" "}
+            </button>
             <a
               href="../../../public/resume/MikeMinkoff.docx"
               download="MikeMinkoff.docx"
