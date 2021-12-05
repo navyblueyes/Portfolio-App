@@ -196,6 +196,9 @@ export default function Testimonial(props) {
           </div>
         </div>
       </section>
+      <div className="footer-image">
+        <img src={"img/testimonial/shape-bg.png"} alt="Phot0 not responding" />
+      </div>
     </div>
   );
 }
