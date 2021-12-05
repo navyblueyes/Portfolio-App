@@ -165,7 +165,7 @@ export default function Resume(props) {
   ];
 
   const handleCarousel = (index) => {
-    let offsetHeight = 360;
+    let offsetHeight = 410;
     let newCarousalOffset = {
       style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
     };

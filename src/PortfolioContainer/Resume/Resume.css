@@ -9,9 +9,8 @@
 
 .resume-card {
   display: flex;
-  height: 500px;
+  height: 360px;
   width: 1000px;
-  margin: 80px 0;
 }
 .resume-bullets {
   box-shadow: 15px 0 9px -15px #1f2235;
@@ -96,7 +95,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 360px;
+  height: 400px;
   width: 100%;
 }
 
