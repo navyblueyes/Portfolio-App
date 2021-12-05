@@ -44,7 +44,7 @@ export default function Testimonial(props) {
         title={"Testimonial"}
         subHeading={"What My Client Say About Me"}
       />
-      <section className="testimonial-secriont" id={props.id || ""}>
+      <section className="testimonial-section" id={props.id || ""}>
         <div className="container">
           <div className="row">
             <OwlCarousel
