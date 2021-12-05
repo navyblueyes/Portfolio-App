@@ -88,9 +88,7 @@ export default function Resume(props) {
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={
-          "Bloc Full Stack Web Development [Javascript, React, Node, MongoDB]"
-        }
+        heading={"Bloc Full Stack Web Dev [JS/React/Node/MongoDB]"}
         subHeading={"Online"}
         fromDate={"Jan 2019"}
         toDate={"July 2019"}
@@ -137,17 +135,19 @@ export default function Resume(props) {
       className="resume-screen-container programming-skills-container"
       key="programming-skills"
     >
-      {programmingSkillsDetails.map((skill, index) => {
-        <div className="skill-parent" key={index}>
-          <div className="heading-bullet"></div>
-          <span>{skill.skill}</span>
-          <div className="skill-perscentage">
-            <div
-              style={{ width: skill.ratingPercentage + "%" }}
-              className="active-percentage"
-            ></div>
+      {programmingSkillsDetails.map(function (skill, index) {
+        return (
+          <div className="skill-parent" key={index}>
+            <div className="heading-bullet"></div>
+            <span>{skill.skill}</span>
+            <div className="skill-percentage">
+              <div
+                style={{ width: skill.ratingPercentage + "%" }}
+                className="active-percentage-bar"
+              ></div>
+            </div>
           </div>
-        </div>;
+        );
       })}
     </div>,
     <div className="resume-screen-container" key="projects">
