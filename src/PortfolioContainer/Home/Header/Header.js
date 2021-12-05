@@ -35,12 +35,12 @@ export default function Header() {
   };
 
   const getHeaderOptionsClass = (index) => {
-    let classes = "header-option";
-    if (index < TOTAL_SCREENS.length - 1) classes += "header-option-separator";
-    if (selectedScreen === index) {
-      classes += "selected-header-option";
-      return;
-    }
+    let classes = "header-option ";
+    if (index < TOTAL_SCREENS.length - 1) classes += "header-option-seperator ";
+
+    if (selectedScreen === index) classes += "selected-header-option ";
+
+    return classes;
   };
 
   const switchScreen = (index, screen) => {
@@ -70,8 +70,8 @@ export default function Header() {
           <div
             className={
               showHeaderOptions
-                ? "header-options show-hamburger-options"
-                : "header-options"
+                ? "header-options show-hamburger-options "
+                : "header-options "
             }
           >
             {getHeaderOptions()}
