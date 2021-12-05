@@ -1,5 +1,8 @@
 import "./Contact.css";
+import axios from "axios";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
+
 import Typical from "react-typical";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -12,7 +15,7 @@ import Animations from "../../utilities/Animations";
 
 export default function Contact(props) {
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
   const fadeInSubscription =
@@ -32,7 +35,30 @@ export default function Contact(props) {
   const handleMessage = (e) => {
     setMessage(e.target.value);
   };
-  console.log(name);
+  const submitForm = async (e) => {
+    let data = {};
+    e.preventDefault();
+    try {
+      let data = {
+        name,
+        email,
+        message,
+      };
+      setBool(true);
+      const res = await axios.post(`/contact`, data);
+      if (name.length === 0 || name.length === 0 || message.length === 0) {
+        setBanner(res.data.msg);
+        toast.error(res.data.msg);
+        setBool(false);
+      } else if (res.status === 200) {
+        setBanner(res.data.msg);
+        toast.success(res.data.msg);
+        setBool(false);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="main-container" id={props.id || ""}>
@@ -51,7 +77,7 @@ export default function Contact(props) {
             <h4>Send Your Email Here!</h4>
             <img src={imgBg} alt="image not found" />
           </div>
-          <form>
+          <form onSubmit={submitForm}>
             <p>{banner}</p>
             <label htmlFor="name">Name</label>
             <input type="text" onChange={handleName} value={name} />
@@ -65,6 +91,13 @@ export default function Contact(props) {
             <div className="send-btn">
               <button type="submit">
                 send <i className="fa fa-paper-plane" />
+                {bool ? (
+                  <b className="load">
+                    <img src={loader1} alt="image not found" />
+                  </b>
+                ) : (
+                  ""
+                )}
               </button>
             </div>
           </form>
