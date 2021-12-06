@@ -22,7 +22,7 @@ export const TOTAL_SCREENS = [
     component: Testimonial,
   },
   {
-    screen_name: "Contactscr",
+    screen_name: "Contact",
     component: Contact,
   },
 ];
