@@ -9,12 +9,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import PortfolioContainer from "./PortfolioContainer/ProtfolioContainer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 library.add(fab, faLinkedin, faCopyright, faLinkedinIn, faAws);
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer />
       <PortfolioContainer />
     </div>
   );

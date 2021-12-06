@@ -12,6 +12,7 @@ import loader1 from "../../../src/assets/ContactMe/load2.gif";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollServices";
 import Animations from "../../utilities/Animations";
+require("dotenv").config();
 
 export default function Contact(props) {
   let fadeInScreenHandler = (screen) => {

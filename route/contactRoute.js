@@ -2,6 +2,9 @@ const router = require("express").Router();
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
+let sendEmail = process.env.EMAIL;
+let sendPass = process.env.PASSWORD;
+
 router.post("/contact", (req, res) => {
   let data = req.body;
   if (
@@ -15,13 +18,13 @@ router.post("/contact", (req, res) => {
     service: "Gmail",
     port: 465,
     auth: {
-      user: process.env.NODE_EM,
-      pass: process.env.NODE_ER,
+      user: sendEmail,
+      pass: sendPass,
     },
   });
   let mailOptions = {
     from: data.email,
-    to: NODE_EM,
+    to: sendEmail,
     subject: `message from ${data.name}`,
     html: `
       <h3>Information</h3>
@@ -38,7 +41,7 @@ router.post("/contact", (req, res) => {
       if (error)
         return res.status(400).json({ msg: "please fill all the fields" });
       res.status(200).json({
-        msg: "Thank you, Mike will get back to to as soon as possible.",
+        msg: "Thank you! Mike will get back to to as soon as possible.",
       });
     } catch (error) {
       if (error) return res.status(500).json({ msg: "There is server error" });
