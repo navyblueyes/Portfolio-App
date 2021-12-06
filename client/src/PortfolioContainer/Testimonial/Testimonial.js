@@ -7,6 +7,11 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollServices";
 import Animations from "../../utilities/Animations";
+import Bob from "../../assets/Testimonial/testil4.jpg";
+import Richard from "../../assets/Testimonial/testil3.jpg";
+import Nancy from "../../assets/Testimonial/testil2.jpg";
+import Hank from "../../assets/Testimonial/testil1.jpg";
+import background from "../../assets/Testimonial/shape-bg.png";
 
 export default function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
@@ -82,7 +87,7 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src="img/testimonial/testil1.jpg" alt="no internet" />
+                    <img src={Hank} alt="no internet" />
                     <h5>Hank Scorpio</h5>
                     <p>CEO Globex Corporation</p>
                   </div>
@@ -117,7 +122,7 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src="img/testimonial/testil4.jpg" alt="no internet" />
+                    <img src={Bob} alt="no internet" />
                     <h5>Bob Lumbergh</h5>
                     <p>CEO Initech</p>
                   </div>
@@ -152,7 +157,7 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src="img/testimonial/testil3.jpg" alt="no internet" />
+                    <img src={Richard} alt="no internet" />
                     <h5>Richard Hendricks</h5>
                     <p>CEO Hooli</p>
                   </div>
@@ -187,7 +192,7 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src="img/testimonial/testil2.jpg" alt="no internet" />
+                    <img src={Nancy} alt="no internet" />
                     <h5>Nancy Botwin</h5>
                     <p>CEO Vehement Capital</p>
                   </div>
@@ -198,7 +203,7 @@ export default function Testimonial(props) {
         </div>
       </section>
       <div className="footer-image">
-        <img src={"img/testimonial/shape-bg.png"} alt="Phot0 not responding" />
+        <img src={background} alt="Img not found" />
       </div>
     </div>
   );
